@@ -48,3 +48,19 @@ spacebar loads another “less” screen   (?)
 
 
 ## 1.4 Forking and Cloning
+
+These tasks are actually quite straightforward with GitHub.  A repository (repo) is where you store projects on GitHub - can be thought of as a folder.  After clicking +, and then New repository, the rest is rather self explanatory.  Public repos are visible to any user on GitHub.  I don’t fully understand the MIT License aspect but I will research it.  You can commit after creating a new repo.
+
+Forking a repo is equally user-friendly.  A fork is a copy of a repo, and forking allows you to experiment with changes without affecting the original project - or use someone else’s code as a starting point for your own development.  Open source allows for sharing and collaborating on code, which should help everyone produce better, more reliable software. 
+
+Creating a local clone of your fork requires going into the Terminal with a copy of the clone URL to paste in.  This is where the commands come into play, namely - git clone.  Creating a clone allows you to have a local copy (files on your computer) of your forked repo.
+
+I had some minor trouble cloning with SSH vs HTTPS and generating my SSH key.  Thankfully, the GitHub Help section is a wealth of easy to search information, with easy to follow instructions. 
+
+$ ssh-keygen -t rsa -b 4096 -C “crowley.andrew@gmail.com“
+
+After using a few easy commands and setting up a passphrase, I added the key to the ssh-agent and to my GitHub profile settings and tested the connection. 
+
+$ pbcopy < ~/.ssh/id_rsa.pub
+
+Here's the message I wanted to see - "Hi AndyVegas! You've successfully authenticated, but GitHub does not provide shell access."
