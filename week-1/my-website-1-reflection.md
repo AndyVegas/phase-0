@@ -25,4 +25,4 @@ git clone URL_THAT_YOU_COPIED
 
 ### Did you find any resources on your own that helped you better understand a topic? If so, please list it.
 
-7. https://help.github.com is very helpful to me.  Too many other sites to list!
+7. https://help.github.com is very helpful to me.  The little messages that pop up in Terminal are helpful as well (git push --help).  Too many other sites to list!
