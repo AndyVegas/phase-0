@@ -21,7 +21,7 @@ git clone URL_THAT_YOU_COPIED
 
 ### What concepts were solidified in the challenge? Did you have any "aha" moments? What did you struggle with?
 
-6. Forking and cloning and [very basic] use of the Mac Terminal really worked for me during this assignment.  I was in a flow of sorts.
+6. Forking and cloning and [very basic] use of the Mac Terminal really worked for me during this assignment.  Until I got to the final project!  I seem to be learning the most when I'm making mistakes, which is a good thing because I'm making alot of them!
 
 ### Did you find any resources on your own that helped you better understand a topic? If so, please list it.
 
