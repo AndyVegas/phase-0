@@ -38,7 +38,10 @@ User experience (abbreviated as UX) is how a person feels when interfacing with 
 *88% of online consumers are less likely to return to a site after a bad experience. @econsultancy
 
 *94% of a user’s first impressions are design-related. - @Veopix
+```
 
+```
 ## Which parts of the challenge did you find tedious?
 
 I am noticing the the assignment hand-holding of week 1 is over!  Researching above and beyond the provided info was tedious and I had some difficulty with release 3 - adding my site map.  After re-reading I was able to work out the issue.  
+```
