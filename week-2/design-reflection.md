@@ -1,4 +1,4 @@
-![Site map](/imgs/Andrew-Crowley-Knowledge-Worker.PDF)
+![Site map](imgs/Andrew-Crowley-Knowledge-Worker.PDF)
 
 ```
 ## What are the 6 Phases of Web Design?
