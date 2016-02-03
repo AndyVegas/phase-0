@@ -1,0 +1,76 @@
+body {
+  color: #000080;
+  column-count: 2;
+  font-size: 10px;
+}
+
+a {
+  color: #800080;
+  font-size: 15px;
+}
+
+a:visited {
+  color: #ff0000;
+}
+
+background-color {
+  color: #ffffff;
+}
+
+span {
+  font-size: 25px;
+}
+
+ul {
+    -moz-column-count: 2;
+    -moz-column-gap: 35px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 35px;
+    column-count: 2;
+    column-gap: 35px;
+}
+
+li {
+  margin: 2em 0;
+}
+
+header {
+  text: bold;
+  text-align: center;
+  font-size: 160%;
+}
+
+div.border { 
+  border-bottom: 1px solid #000; 
+}
+
+footer {
+  font-size: 1;
+}
+
+/* 
+What is important to know when linking an external file (like a stylesheet) to an HTML file?
+
+This is done using the self closing <LINK> tag, which always goes in the <HEAD>, usually looking something like this:
+<head>
+<link rel="stylesheet" type="text/css" href=“-berkshire-stylesheet.css”>
+</head>
+The tricky part is getting the relative path in href correct.  
+
+What tricks did you use to help you with positioning? How hard was it to get the site as you wanted it?
+
+Column count was a big one making a dramatic impact on the screen, while quite easy and straightforward.  The adjusting the list margins also worked out nicely.  Getting the fonts correct in the header was fiddly, and we didn’t exactly get it in the end.  CSS can be frustrating, but with enough time you can get everything just how you want, I’m sure.  
+
+What CSS did you use to modify the element style (like size, color, etc.)
+
+Color and font-size were used alot.  We found a handy trick to adjust found font size right in the html document, but I see that is not the best practice.  
+
+Did you modify the HTML to include classes or ids? If so, which did you choose and why? If you didn't, how would you know which one to add to your HTML?
+
+Yes, we used classes (“border”) to make the horizontal lines.  There was another neat HTML trick <hr> but this was also not best practices (and too easy!) 
+
+When you compared your site to the actual code base, which do you think had cleaner code that followed best practices and why?
+
+As we used more classes and CSS in general, we decided that our code was cleaner and would be easier to maintain.  Maintaining a nice website does not seem to be a priority at Berkshire Hathaway, and who am I to judge?  I’m sure for their purposes - the occasionally business link update - their HTML heavy site gets the job done.  
+
+*/
