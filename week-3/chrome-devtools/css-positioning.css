@@ -9,34 +9,41 @@ body {
 
 #div-1 {
   background-color: yellow;
-  position: static;
+  position: fixed;
   height: 5em;
   width: 5em;
   padding: 5em;
-  position: inline;
-  margin-right: 40%;
+  bottom: 0;
+  right: 0;
 }
+
 #div-2 {
   background-color: black;
-  position: static;
+  position: fixed;
   height: 5em;
   width: 5em;
   padding: 5em;
-  position: inline;
+  margin: 10em;
+  top: 0;
+  right: 0;
 }
+
 #div-3 {
   background-color: white;
-  position: static;
+  position: fixed;
   height: 5em;
   width: 5em;
   padding: 5em;
-  position: inline;
+  top: 0;
+  left: 0;
 }
+
 #div-4 {
   background-color: red;
-  position: static;
+  position: fixed;
   height: 5em;
   width: 5em;
   padding: 5em;
-  position: inline;
+  bottom: 0;
+  left: 0;
 }
