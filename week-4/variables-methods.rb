@@ -1,3 +1,5 @@
+Release 2: Try it out
+
 #Full name greeting: Write a program that asks for a person's first name, then middle, then last. Finally, it should greet the person using their full name.
 
 puts "Hi!  What is your first name?"
@@ -18,6 +20,19 @@ fav_num = gets.chomp.to_s
 better = fav_num.to_i + 1
 
 puts "Well... that's not bad, but you've gotta admit " + better.to_s + " is a much bigger and better number, amirite??!"
+
+
+Release 3: Creating Methods
+
+In the my_solution.rb file, define a method called do_something that accepts three parameters - https://github.com/AndyVegas/phase-0/blob/master/week-4/define-method/my_solution.rb
+
+
+Release 4: More small exercises!
+
+Return a Formatted Address - https://github.com/AndyVegas/phase-0/blob/master/week-4/address/my_solution.rb
+
+Defining Math Methods - https://github.com/AndyVegas/phase-0/blob/master/week-4/math/my_solution.rb
+
 
 =begin
 Release 6: Reflect
