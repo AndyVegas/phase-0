@@ -20,26 +20,41 @@
 #.each
 #.map
 #.split
+#.reverse
 
 # 1. Initial Solution
 
-def separate_comma(num)
-	if num.length <= 3
-		return num
-	elsif num.length > 3
 
-			
+=begin
+def separate_comma(number)
+  number.to_s.reverse.gsub(/(\d{3})(?=\d)/, '\\1,').reverse
+end
+=end
+
+
+
+
+def separate_comma(num)
+	new_num = num.to_s.split(//)
+	big_num = new_num.join.reverse.each_slice(3)
+	big_num.map.join(",").reverse
+	if new_num.length <= 3
+		return new_num.join
+	else
+		return big_num
 	end
 
-		
-	
-end
 
+	
+
+
+
+end
 
 
 # 2. Refactored Solution
 
 
-
+#num.to_s.split(//).reverse.each_slice(3).map(&:join).join(',').reverse
 
 # 3. Reflection
