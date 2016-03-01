@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>@ndrew ©rowley</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/blog.css">
+</head>
+
+<body>
+<!--  
+  <header>
+    <nav>
+      <ul>
+        <li>Your menu</li>
+      </ul>
+    </nav>
+  </header>
+ --> 
+  <section>
+  
+    <article>
+      <header>
+        <h2>Every class is an instance of a class called Class! - Technical Blog</h2>
+        <p>Posted on <time datetime="2016-02-28">February 28th 2016</time> by <a href="http://andyvegas.github.io/index.html">andrew crowley</a> </p>
+      </header>
+      <p>
+As I’ve been learning Ruby, I’ve been working with various types — numbers, strings, arrays, and hashes. Ruby calls these things classes. 
+</p>
+<p>
+A class is best described as a blueprint - the blueprint tells Ruby how a class should be structured and what it should do.  For example, a blueprint of a car would show how a car can be made, however it would not go into details about an individual car, like the color.   </p>
+
+<p>In Ruby, a class definition is a region of code between the keywords "class" and "end". A def inside this region begins the definition of a method of the class, which corresponds to some specific behavior for objects of that class.</p>
+
+<p>It’s pretty simple to create a class, and since Ruby is cool, we can make them like real-world objects.  Here I've created a pretty useless Name class.</p>
+
+<p>The class name should be capitalized, as in the example below:</p>
+<code>
+<p>
+  class Name
+  def title
+    "Mr."
+  end
+
+  def first_name
+    "Worthington"
+  end
+
+  def middle_name
+    "Zhang"
+  end
+
+  def last_name
+    "Shufflebottom"
+  end
+end
+</p>
+</code>
+
+<p>
+By defining basic classes, we can use some of Ruby’s nice little features to make setting up the boilerplate code much easier.  A Class method is a piece of functionality that belongs to that class, but is not tied to any particular single instance.  Instance Methods on the other hand, can only be called on a particular instance of the class.</p>
+
+<code><p>
+class Walmart
+  def self.find(id)
+    puts "#{id}"
+  end
+ 
+  def products
+    []
+  end
+end
+</p></code>
+
+<p>In the example above, "products" is an Instance method.  You use Instance Methods when you need to act on a particular instance of the class.
+</p>
+
+    </article>
+    
+  </section>
+
+  <aside>
+    <h2>About section</h2>
+    <p>Assignment 6.9 - Technical Blog </p>
+  </aside>
+
+  <footer>
+    <p>copyright 2016 andrew crowley</p>
+  </footer>
+</body>
+</html>
