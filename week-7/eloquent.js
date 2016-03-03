@@ -1,37 +1,61 @@
 // Eloquent JavaScript
 
-
 /*
-Release 2: Reflect
-
-In the text submission box, answer the following questions:
-
-What are the biggest similarities and differences between JavaScript and Ruby?
-Ruby and JavaScript are both object oriented languages?
-Some things are very similar like if and while loops, as well as break, push, pop and join... and calling functions.  There are styles.  In other cases, JavaScript seems to have alot more rules.  Return statements for example have different laws, exiting a function and sending the value back to the spot where the function was called - used to send back a value from a function?.   In Ruby, there are destructive string methods like map! that will modify the source object. Ruby uses the ! bang symbol to notify us of these properties. In JavaScript, there is no such convention for desctructive methods. 
-
-Was some of your Ruby knowledge solidified by learning another language? If so, which concepts?
-
-How do you feel about diving into JavaScript after reading these chapters?
+Write your own variable and do something to it in the eloquent.js file.
 */
 
-
-// Run this file in your terminal using `node my_solution.js`. Make sure it works before moving on!
-
-// Program Structure
-// Write your own variable and do something to it.
+var whatsYourName = prompt("So what is your name?");
+document.write(whatsYourName);
 
 
+/*
+Write a short program that asks for a user to input their favorite food. After they hit return, have the program respond with "Hey! That's my favorite too!" (You will probably need to run this in the Chrome console rather than node since node does not support prompt or alert). Paste your program into the eloquent.js file.
+*/
 
-// Complete one of the exercises: Looping a Triangle, FizzBuzz, or Chess Board
+var faveFood = prompt("So what is your favorite food?");
+console.log("Hey! That's my favorite too!");
+
+/*
+Complete at least one of the exercises (Looping a Triangle, FizzBuzz, of Chess Board) in the eloquent.js file.
+*/
+
+// var number = 0;
+// var triangle = number += 1;
+// 	while (number < 7) {
+// 		console.log("#") * triangle;
+// 	}
+
+// var triangle = "#######";
+// 	while (triangle.length < 1) {
+// 		console.log(triangle - "#");
+// }
+
+	for (var triangle = "#"; triangle.length < 8; line += "#")
+  console.log(triangle);
 
 
+/*
+Complete the minimum exercise in the eloquent.js file.
+*/
 
-// Functions
+function min(x, y) {
+	when (x > y) 
+		return y;
+		else
+			return x;
+	};
 
-// Complete the `minimum` exercise.
 
+/*
+Create an object called me that stores your name, age, three favorite foods, and a quirk in your eloquent.js file.
 
+Objects are variables containing variables
+*/
 
-// Data Structures: Objects and Arrays
-// Create an object called "me" that stores your name, age, 3 favorite foods, and a quirk below.
+var me = {
+    name 			: "Andrew",
+    age       : 90,
+    faveFoods : "pizza", "Greek salad", "pickles",
+    quirk			: "Arsenal supporter"
+};
+
