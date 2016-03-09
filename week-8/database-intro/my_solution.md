@@ -42,6 +42,8 @@ sqlite> SELECT region_name FROM regions WHERE region_name LIKE '%Central';
 
 sqlite> SELECT regions.region_name, states.state_name FROM states INNER JOIN regions ORDER BY region_id ASC;
 
+![Schema two table screen shot](../schema_design.png "Schema screen shot")
+
 Release 7: Reflect
 
 What are databases for?
