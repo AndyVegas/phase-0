@@ -1,4 +1,4 @@
-<!-- 
+ 
 CREATE TABLE states(id smallint, state_name varchar(30), population_density float, population int, region_id smallint);
 CREATE TABLE regions(id smallint, region_name varchar(255));
 
@@ -59,4 +59,4 @@ A primary key uniquely identifies a record in the table.  A foreign key is a fie
 How can you select information out of a SQL database? What are some general guidelines for that?
 
 Lines of SQL code unknown as a Statement or a Query.  A statement in SQL is like a sentence in English.  A query in SQL is like asking a question in English.  In general the syntax is much like English and best practices say you should put keywords, such as SELECT and FROM in all caps.  The asterisk, or the star character, means you want to bring all of the information in all of the tables, columns back.  AND and OR keywords can be used to chain conditions together.  !(Bang) also means "not" just like in Ruby and JS.   
--->
+
