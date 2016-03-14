@@ -1,7 +1,7 @@
 /*
 Gradebook from Names and Scores
-I worked on this challenge [by myself, with:]
-This challenge took me [#] hours.
+I worked on this challenge with Emmett Garber
+This challenge took me 2 hours.
 You will work with the following two variables.  The first, students, holds the names of four students.
 The second, scores, holds groups of test scores.  The relative positions of elements within the two
 variables match (i.e., 'Joseph' is the first element in students; his scores are the first value in scores.).
@@ -53,10 +53,6 @@ var scores = [ [80, 70, 70, 100],
 // gradebook.addScore("Susan", 80);
 
 
-
-
-
-
 // __________________________________________
 // Refactored Solution
 
@@ -100,17 +96,31 @@ function average (testArray) {
 // __________________________________________
 // Reflect
 
-
 // What did you learn about adding functions to objects?
+// Here is the standard way to create an object prototype is to use an object constructor function:
+// function person(first, last, age, eyecolor) {
+//     this.firstName = first;
+//     this.lastName = last;
+//     this.age = age;
+//     this.eyeColor = eyecolor;
+// }
+
+// With a constructor function, you can use the new keyword to create new objects from the same prototype:
+// var myFather = new person("John", "Doe", 50, "blue");
+// var myMother = new person("Sally", "Rally", 48, "green");
+
+// Adding a new property to an existing object is easy:
+// myFather.nationality = "English";
 
 
 
 
-// How did you iterate over nested arrays in JavaScript?
+// How did you iterate over nested arrays in JavaScript?  
+// The for loop is very helpful for iterating over nested arrays in JS.  Using .length we can go through each object in the array.  
 
 // Were there any new methods you were able to incorporate? If so, what were they and how did they work?
 
-
+// The reduce method is good for any sort of situation where we want to take an array and boil it down into a new value in steps that have access to one or two of the array elements at a time.  Unlike map and sort, which produce new arrays, reduce can boil an array down to a new value of any type.
 
 
 
