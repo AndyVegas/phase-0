@@ -17,40 +17,46 @@
 // 4) add the two values to the list
 // 5) when finished, print a complete list with items and quantities (will have to add an 'end' break)
 
-
-
-var grocery_list = [];
-var list;
-
-function add_item(item) {
-	grocery_list.push(item);
+function addItem(item) {
+  groceryList.push(item);
 }
 
-function remove_item(item){
-    for (var i = 0; i <= groceryList.length; i++){
-        if (groceryList[i] === item) groceryList.splice(i, 1);
-        else console.log("That item isn't on the list.");
+function removeItem(item){
+  for (var i = 0; i <= groceryList.length; i++){
+    if (groceryList[i] === item) {
+      groceryList.splice(i, 1);
+    } else {
+      console.log("That item isn't on the list.");
     }
+  }
 }
 
-function view_list(){
-    for (var i = 0; i < groceryList.length; i++){
-        if (groceryList.length == 0)
-        return;
-        else
-        console.log("- " + groceryList[i]);
+function viewList(){
+  var listElement = document.getElementById("output")
+  var innerHtml = "<ul>"
+
+  for (var i = 0; i < groceryList.length; i++) {
+    if (groceryList.length == 0) {
+      return;
+    } else {
+      innerHtml =  innerHtml  + "<li>" + groceryList[i] + "</li>"
     }
+  }
+
+  innerHtml = innerHtml + "</ul>"
+  listElement.innerHTML = innerHtml;
 }
 
+var groceryList = [];
+var list = prompt('Welcome to the GROCERY LIST!  Would you like to make a list? y/n')
+list = list.toLowerCase();
 
 while (true) {
-list = prompt('Welcome to the GROCERY LIST!  Would you like to make a list? y/n')
-  list = list.toLowerCase();
-     if (list === 'n') {
-         return;
-       } else if (list === 'y') {
-       add_item = prompt('What grocery item would you like to add to the list?')
-     }
+  if (list === 'n') {
+    break;
+  } else if (list === 'y') {
+    item = prompt('What grocery item would you like to add to the list?')
+    addItem(item);
+    viewList();
+  }
 }
-
-
