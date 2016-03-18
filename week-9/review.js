@@ -21,7 +21,7 @@ function addItem(item) {
   groceryList.push(item);
 }
 
-function removeItem(item){
+function removeItem(item) { 
   for (var i = 0; i <= groceryList.length; i++){
     if (groceryList[i] === item) {
       groceryList.splice(i, 1);
@@ -31,7 +31,7 @@ function removeItem(item){
   }
 }
 
-function viewList(){
+function viewList() {
   var listElement = document.getElementById("output")
   var innerHtml = "<ul>"
 
@@ -39,24 +39,21 @@ function viewList(){
     if (groceryList.length == 0) {
       return;
     } else {
-      innerHtml =  innerHtml  + "<li>" + groceryList[i] + "</li>"
+      innerHtml = innerHtml  + "<li>" + groceryList[i] + "</li>"
     }
   }
 
-  innerHtml = innerHtml + "</ul>"
+  innerHtml += "</ul>"
   listElement.innerHTML = innerHtml;
 }
 
 var groceryList = [];
 var list = prompt('Welcome to the GROCERY LIST!  Would you like to make a list? y/n')
-list = list.toLowerCase();
 
-while (true) {
-  if (list === 'n') {
-    break;
-  } else if (list === 'y') {
+if(list.toLowerCase()[0] === 'y') {
+  do {
     item = prompt('What grocery item would you like to add to the list?')
     addItem(item);
     viewList();
-  }
+  } while(confirm("Would you like to add another item?"))
 }
